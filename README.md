@@ -4,7 +4,7 @@ A Python application that opens the zoom link of your class on the class time.
 # How to use
 First, make a text file called "sched.txt".
 
-Put your classes there in the format. Separate each course with a comma and separate each detail about the course with a space.:
+Put your classes there in the format. Separate each info with a tab and put each course in one line.:
 |Course Code |Course Name|Section|Name of Professor|Schedule|Zoom Link|      
 |----|-----|-------|-----------|----|-
 
