@@ -1,22 +1,19 @@
 # Zoom-Opener
-A C++ application that opens the zoom link of your class 2 minutes before the class time.
+A Python application that opens the zoom link of your class on the class time.
 
 # How to use
-First, make a text file called "classes.txt".
+First, make a text file called "sched.txt".
 
 Put your classes there in the format. Separate each course with a comma and separate each detail about the course with a space.:
-|Course Name|Days of the Class|Time|Zoom Link|      
-|----|-----|-------|-----------|      
+|Course Code |Course Name|Section|Name of Professor|Schedule|Zoom Link|      
+|----|-----|-------|-----------|----|-
 
-Here is an example .txt file:
+Here is an example `sched.txt` file:
 ```
-Circuits_I Mon|Tue|Wed 10:00 https://zoom.us/classLinkHere,
-Electronics_I Sat 13:00 http://zoom.us/classLinkHere,
-Software_Dev Thu 15:00 http://zoom.us/classLinkhere,
+CLASS CODE 10.2	UNITS	COURSE NAME	SECTION	PROFESSOR, NAME OF	T 1400-1530 / TBA	https://zoom.us/link
+CSCI 20	3	COMPUTER SCIENCE BASICS	A	PAUL, JEAN	T-TH 0800-0930 / TBA	https://zoom.us/link
+
 ```
 
-If the class is held on multiple days of the week, separate each day with `|`.
-
-Make sure to use military time format for the time and separate the hours and minutes with a `:`.
-
-Once you're done making the "classes.txt" file, you can compile the .cpp file.
+After making the schedule file, make sure to install the dependency in `requirements.txt`.
+You can now run the application using `py main.py`.
